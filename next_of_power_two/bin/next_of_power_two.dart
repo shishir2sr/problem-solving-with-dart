@@ -1,15 +1,13 @@
 import 'dart:math';
 
 void main(List<String> arguments) {
-  const n = 10;
-  var current = 1;
-  var previous = 1;
-  var done = 2;
-  while (done < n) {
-    final next = current + previous;
-    previous = current;
-    current = next;
-    done += 1;
+  const number = 550;
+  num power;
+  for (int i = 0; i < number; i++) {
+    power = pow(2, i);
+    if (power > number) {
+      print('The power is $power which is ${i}th exponential of 2');
+      break;
+    }
   }
-  print('Fibonacci number $n is $current.');
 }
