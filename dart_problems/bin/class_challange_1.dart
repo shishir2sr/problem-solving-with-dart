@@ -11,6 +11,8 @@ class Student {
   final String firstName;
   final String lastName;
   final int grade;
+
+  ///student constructor to create instance of student
   Student({
     required this.firstName,
     required this.lastName,
